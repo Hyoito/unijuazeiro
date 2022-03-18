@@ -31,8 +31,8 @@ while (numero!=0){
     console.log(`Raiz quadrado`, Number(numero)*Number(numero))
 }**/
 
-/**let numero
+let numero
 do{
     numero = prompt(`informe um número:`);
     console.log(`Raiz quadrado`, Number(numero)*Number(numero))
-} while (numero!=0);**/
+} while (numero!=0);
