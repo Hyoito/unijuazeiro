@@ -37,3 +37,20 @@ do{
     console.log(`Raiz quadrado`, Number(numero)*Number(numero))
 } while (numero!=0);**/
 
+/**let numero = prompt(`Informe um número:`)
+
+switch (Number(numero)) {
+    case 1:
+        console.log("Você é um aluno");
+        break;
+    case 2:
+        console.log("Você é um professor");
+        break;
+    case 3:
+        console.log("Você é um coordenador");
+        break;
+    default:
+        console.log("Você é um funcionário");
+        break;
+}**/
+
