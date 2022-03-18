@@ -1,19 +1,38 @@
 const prompt = require("prompt-sync")();
 
-let nota1 = prompt("Digite seu número")
-let nota2 = prompt("Digite seu número")
-let nota3 = prompt("Digite seu número")
+/**let x = prompt("Informe um número: ");
+let y = prompt("Informe um número: ");
+let num1 = Number(x);
+let num2 = Number(y);
 
-const media = (nota1 + nota2 + nota3)/3
+let soma = num1+num2;
+console.log("Soma: s ${soma}");**/
 
-if media >= 0, media < 2.9{
-    console.log("Reprovado")
-}else if media >= 3, media < 6.9{
-    console.log("Exame")
-}else if media >= 7, media <= 10{
-    console.log("Aprovado")
-}else{
-    console.log("Erro!Digite as notas novamente")
+/**let numero = 0
+
+for( let i = 1; i < 11; i++){
+    let x = prompt(`Informe ${i} número:`);
+    numero= numero+Number(x);
 }
 
+console.log(`Soma total: ${numero}`);
 
+if(numero > 0){
+    console.log(`Valor positivo`);
+}else if (numero <0){
+    console.log(`Valor negativo`);
+}else{
+    console.log(`nulo`);
+}**/
+
+/**let numero
+while (numero!=0){
+    numero = prompt(`informe um número: `);
+    console.log(`Raiz quadrado`, Number(numero)*Number(numero))
+}**/
+
+let numero
+do{
+    numero = prompt(`informe um número:`);
+    console.log(`Raiz quadrado`, Number(numero)*Number(numero))
+} while (numero!=0);
