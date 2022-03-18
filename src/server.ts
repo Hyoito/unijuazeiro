@@ -27,13 +27,13 @@ if(numero > 0){
 
 /**let numero
 while (numero!=0){
-    numero = prompt(`informe um número: `);
+    numero = prompt(`Informe um número: `);
     console.log(`Raiz quadrado`, Number(numero)*Number(numero))
 }**/
 
 /**let numero
 do{
-    numero = prompt(`informe um número:`);
+    numero = prompt(`Informe um número:`);
     console.log(`Raiz quadrado`, Number(numero)*Number(numero))
 } while (numero!=0);**/
 
@@ -54,3 +54,15 @@ switch (Number(numero)) {
         break;
 }**/
 
+/**let fruits1: string[] = ['Apple', 'Orange', 'Banana'];
+
+for (let i = 0; i < fruits1.length; i++){
+    console.log(fruits1[i]);
+}**/
+
+let sabores = new Array(4)
+
+for (let i = 0; i < sabores.length; i++){
+    sabores[i] = prompt(`Informe o ${i+1} sabor:`);
+}
+console.log(`Sorvete com o seguinte ${sabores}`);
