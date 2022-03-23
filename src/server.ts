@@ -60,9 +60,50 @@ for (let i = 0; i < fruits1.length; i++){
     console.log(fruits1[i]);
 }**/
 
-let sabores = new Array(4)
+/**var sabores = new Array(4)
 
-for (let i = 0; i < sabores.length; i++){
+for (var i = 0; i < sabores.length; i++){
     sabores[i] = prompt(`Informe o ${i+1} sabor:`);
 }
 console.log(`Sorvete com o seguinte ${sabores}`);
+
+let add = prompt(`Deseja adicioanar mais um sabor? 1 para sim e 0 para não: `);
+
+if (add == 1){
+    var novo = prompt(`Qual sabor deseja adicionar? `);
+    
+    sabores.push(novo)
+
+    console.log(`Seu pedido ficou o seguinte:${sabores}`);
+}else if (add == 0){
+    console.log(`Ok pedido anotado.`);
+}else{
+    console.log(`Comece de novo!`);
+}**/
+
+var sabores = new Array(4)
+
+for (var i = 0; i < sabores.length; i++){
+    sabores[i] = prompt(`Informe o ${i+1} sabor:`);
+}
+console.log(`Sorvete com o seguinte ${sabores}`);
+
+let add = prompt(`Deseja adicioanar mais um sabor? 1 para sim e 0 para não: `);
+
+switch (Number(add)) {
+    case add = 1:
+        var novo = prompt(`Qual sabor deseja adicionar? `);
+    
+        sabores.push(novo)
+
+        console.log(`Seu pedido ficou o seguinte:${sabores}`);
+        break;
+    
+    case add = 0:
+        console.log(`Ok pedido anotado.`);
+        break;
+
+    default:
+        console.log(`Erro comece de novo!`)
+        break;
+}
