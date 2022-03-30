@@ -81,7 +81,7 @@ if (add == 1){
     console.log(`Comece de novo!`);
 }**/
 
-var sabores = new Array(4)
+/*var sabores = new Array(4)
 
 for (var i = 0; i < sabores.length; i++){
     sabores[i] = prompt(`Informe o ${i+1} sabor:`);
@@ -106,4 +106,83 @@ switch (Number(add)) {
     default:
         console.log(`Erro comece de novo!`)
         break;
+}*/
+
+/**1
+ * let nota1 = prompt("Informe a nota do trabalho de laboratorio: ");
+let nota2 = prompt("Informe a nota da avaliação semestral: ");
+let nota3 = prompt("Informe a nota do exame final: ");
+
+let peso1 = Number(nota1) * 2;
+let peso2 = Number(nota2) * 3;
+let peso3 = Number(nota3) * 5;
+
+let media = peso1 + peso2 + peso3 / 3;
+
+console.log(`Media ${media}`);
+
+if (media >= 8){
+    console.log(`Conceito A`)
+}else if (media >= 7){
+    console.log(`Conceito B`)
+}else if (media >= 6){
+    console.log(`Conceito C`)
+}else if (media >=5){
+    console.log(`Conceito D`)
+}else{
+    console.log(`Conceito E`)
+}*/
+
+/**2
+ * let numero = new Array(3)
+
+
+for (var i = 0; i < numero.length; i++){
+    numero[i] = prompt(`Informe o ${i+1} numero:`);
 }
+console.log(`${numero.sort()}`);*/
+
+
+ let numero = new Array(4)
+
+
+for (var i = 0; i < numero.length; i++){
+    numero[i] = prompt(`Informe o ${i+1} numero:`);
+}
+console.log(`${numero.reverse()}`);
+
+/** 4 
+ * let codigo = prompt("Informe o número")
+
+switch (Number(codigo)) {
+    case 1:
+        console.log(`Escrituário: aumento de 50%`);
+        break;
+    case 2:
+        console.log(`Secretário: aumento de 35%`);
+        break;
+    case 3:
+        console.log(`Caixa : aumento de 20%`);
+        break;
+    case 4:
+        console.log(`Gerente : aumento de 10%`);
+        break;
+    case 5:
+        console.log(`Diretor : aumento de 0%`);
+        break;
+    default:
+        break;
+}*/
+
+
+/**5
+ * let soma = 0
+
+let numero: string[] =  prompt("Informe os números:");
+for (let i = 0; i < numero.length; i++){
+    console.log(numero[i]);
+}
+
+numero.forEach(Number Array ){
+    console.log(`soma += ${Number}`)
+}*/
