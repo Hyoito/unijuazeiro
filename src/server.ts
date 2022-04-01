@@ -108,6 +108,7 @@ switch (Number(add)) {
         break;
 }*/
 
+
 /**1
  * let nota1 = prompt("Informe a nota do trabalho de laboratorio: ");
 let nota2 = prompt("Informe a nota da avaliação semestral: ");
@@ -140,17 +141,21 @@ if (media >= 8){
 for (var i = 0; i < numero.length; i++){
     numero[i] = prompt(`Informe o ${i+1} numero:`);
 }
-console.log(`${numero.sort()}`);*/
+console.log(`${numero.sort((a,b) => (a-b))}`);*/
 
 
- let numero = new Array(4)
+/**3
+ * let numero = new Array(4)
 
 
 for (var i = 0; i < numero.length; i++){
     numero[i] = prompt(`Informe o ${i+1} numero:`);
 }
-console.log(`${numero.reverse()}`);
 
+numero.sort(function(a, b) {
+    return a - b;
+});
+console.log(numero);*/
 /** 4 
  * let codigo = prompt("Informe o número")
 
@@ -174,15 +179,62 @@ switch (Number(codigo)) {
         break;
 }*/
 
+/*let qtN = 1
+let soma = 0
+let maior = 0
+let menor = 0 
+let qtI = 0
+let qtP = 0
+let somaP = 0
 
-/**5
- * let soma = 0
+let numero = Number(prompt("Digite um numero:"))
 
-let numero: string[] =  prompt("Informe os números:");
-for (let i = 0; i < numero.length; i++){
-    console.log(numero[i]);
+function calcular(){
+    maior = numero
+
+    menor = numero
+
+    while (numero != 30000){
+        qtN += 1
+        soma += numero
+        numero = Number(prompt("Digite um numero"))
+        
+        if (numero > maior){
+            maior = numero
+        }else if (numero < menor){
+            menor = numero
+        }else{
+            qtI +=1
+        }
+    }
+
+console.log(`A quantidade de número é ${qtN}`)
+
+console.log(`A media é ${((soma+30000)/qtN).toFixed(1)}`)
+
+console.log(`O maior número é ${maior}`)
+
+console.log(`O menor número é ${menor}`)
+
+console.log(`A media de número pares é ${somaP / qtP}`)
+
+console.log(`A porcentagem de número impares é ${(qtI / qtN *100).toFixed(1)}%`)
+}
+calcular()*/
+
+/*function soma(n1: number, n2: number){
+    let soma = n1 + n2;
+    console.log("Soma: ", soma)
 }
 
-numero.forEach(Number Array ){
-    console.log(`soma += ${Number}`)
-}*/
+/*function passar (nome : string, n1 : number, n2: number){
+    let media = (n1 + n2)/2;
+    if (media >= 7){
+        console.log(`O ${nome} possui uma média de ${media},ele está aprovado`);
+    }else if (media < 7){
+        console.log(`O ${nome} possui uma média de ${media},ele está reprovado`);
+    }else{
+        console.log(`As notas digitadas estão erradas, por favor tente novamente`)
+    }
+}
+passar("Breno",10,8);*/
