@@ -283,7 +283,9 @@ class Conta{
     }
 
     sacar(valor: number){
-        if (valor < this.saldo){
+        if (valor < 0){
+            console.log(`Falha ao realizar saque`);
+        }else if (valor < this.saldo){
             console.log(`Você realizou um saque de ${valor}`);
         }else if (valor > this.saldo){
             console.log(`Não é possivel retirar um valor acima do saldo`);
