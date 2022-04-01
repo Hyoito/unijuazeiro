@@ -1,3 +1,5 @@
+import { setUncaughtExceptionCaptureCallback } from "process";
+
 const prompt = require("prompt-sync")();
 
 /**let x = prompt("Informe um número: ");
@@ -238,3 +240,64 @@ calcular()*/
     }
 }
 passar("Breno",10,8);*/
+// class Pessoa{
+//     nome: string;
+//     idade: number;
+
+//     constructor(nome: string, idade: number){
+//         this.nome = nome;
+//         this.idade = idade;
+//     }
+//     nascer(): void{
+//         console.log(`Ola ${this.nome}, bem-vindo ao mundo`);
+//     }
+//     morrer(): void{
+//         console.log(`Tchau ${this.nome}, Game Over com ${this.idade}`);
+//     }
+// }
+
+// let pessoa = new Pessoa('Zezin',100)
+
+// pessoa.nascer();
+
+// pessoa.morrer();
+
+class Conta{
+    nome: string;
+    saldo: number;
+    tipo : string;
+
+    constructor(nome: string, saldo: number, tipo : string){
+        this.nome = nome;
+        this.saldo = saldo;
+        this.tipo = tipo;
+    }
+    
+    depositar(valor: number){
+        this.saldo = this.saldo + valor
+        console.log(`Você realizou um deposito de ${valor}`);
+    }
+
+    verSaldo(){
+        console.log(`O seu saldo é ${this.saldo}`);
+    }
+
+    sacar(valor: number){
+        if (valor < this.saldo){
+            console.log(`Você realizou um saque de ${valor}`);
+        }else if (valor > this.saldo){
+            console.log(`Não é possivel retirar um valor acima do saldo`);
+        }else{
+            console.log(`Falha ao realizar saque`);
+        }
+    }
+
+}
+
+let conta = new Conta("Breno", 100, 'corrente')
+
+conta.depositar(100)
+
+conta.verSaldo()
+
+conta.sacar(-3)
