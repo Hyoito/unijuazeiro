@@ -110,120 +110,6 @@ switch (Number(add)) {
         break;
 }*/
 
-
-/**1
- * let nota1 = prompt("Informe a nota do trabalho de laboratorio: ");
-let nota2 = prompt("Informe a nota da avaliação semestral: ");
-let nota3 = prompt("Informe a nota do exame final: ");
-
-let peso1 = Number(nota1) * 2;
-let peso2 = Number(nota2) * 3;
-let peso3 = Number(nota3) * 5;
-
-let media = peso1 + peso2 + peso3 / 3;
-
-console.log(`Media ${media}`);
-
-if (media >= 8){
-    console.log(`Conceito A`)
-}else if (media >= 7){
-    console.log(`Conceito B`)
-}else if (media >= 6){
-    console.log(`Conceito C`)
-}else if (media >=5){
-    console.log(`Conceito D`)
-}else{
-    console.log(`Conceito E`)
-}*/
-
-/**2
- * let numero = new Array(3)
-
-
-for (var i = 0; i < numero.length; i++){
-    numero[i] = prompt(`Informe o ${i+1} numero:`);
-}
-console.log(`${numero.sort((a,b) => (a-b))}`);*/
-
-
-/**3
- * let numero = new Array(4)
-
-
-for (var i = 0; i < numero.length; i++){
-    numero[i] = prompt(`Informe o ${i+1} numero:`);
-}
-
-numero.sort(function(a, b) {
-    return a - b;
-});
-console.log(numero);*/
-/** 4 
- * let codigo = prompt("Informe o número")
-
-switch (Number(codigo)) {
-    case 1:
-        console.log(`Escrituário: aumento de 50%`);
-        break;
-    case 2:
-        console.log(`Secretário: aumento de 35%`);
-        break;
-    case 3:
-        console.log(`Caixa : aumento de 20%`);
-        break;
-    case 4:
-        console.log(`Gerente : aumento de 10%`);
-        break;
-    case 5:
-        console.log(`Diretor : aumento de 0%`);
-        break;
-    default:
-        break;
-}*/
-
-/*let qtN = 1
-let soma = 0
-let maior = 0
-let menor = 0 
-let qtI = 0
-let qtP = 0
-let somaP = 0
-
-let numero = Number(prompt("Digite um numero:"))
-
-function calcular(){
-    maior = numero
-
-    menor = numero
-
-    while (numero != 30000){
-        qtN += 1
-        soma += numero
-        numero = Number(prompt("Digite um numero"))
-        
-        if (numero > maior){
-            maior = numero
-        }else if (numero < menor){
-            menor = numero
-        }else{
-            qtI +=1
-        }
-    }
-
-console.log(`A quantidade de número é ${qtN}`)
-
-console.log(`A media é ${((soma+30000)/qtN).toFixed(1)}`)
-
-console.log(`O maior número é ${maior}`)
-
-console.log(`O menor número é ${menor}`)
-
-console.log(`A media de número pares é ${somaP / qtP}`)
-
-console.log(`A porcentagem de número impares é ${(qtI / qtN *100).toFixed(1)}%`)
-}
-calcular()*/
-
 /*function soma(n1: number, n2: number){
     let soma = n1 + n2;
     console.log("Soma: ", soma)
@@ -262,44 +148,44 @@ passar("Breno",10,8);*/
 
 // pessoa.morrer();
 
-class Conta{
-    nome: string;
-    saldo: number;
-    tipo : string;
+// class Conta{
+//     nome: string;
+//     saldo: number;
+//     tipo : string;
 
-    constructor(nome: string, saldo: number, tipo : string){
-        this.nome = nome;
-        this.saldo = saldo;
-        this.tipo = tipo;
-    }
+//     constructor(nome: string, saldo: number, tipo : string){
+//         this.nome = nome;
+//         this.saldo = saldo;
+//         this.tipo = tipo;
+//     }
     
-    depositar(valor: number){
-        this.saldo = this.saldo + valor
-        console.log(`Você realizou um deposito de ${valor}`);
-    }
+//     depositar(valor: number){
+//         this.saldo = this.saldo + valor
+//         console.log(`Você realizou um deposito de ${valor}`);
+//     }
 
-    verSaldo(){
-        console.log(`O seu saldo é ${this.saldo}`);
-    }
+//     verSaldo(){
+//         console.log(`O seu saldo é ${this.saldo}`);
+//     }
 
-    sacar(valor: number){
-        if (valor < 0){
-            console.log(`Falha ao realizar saque`);
-        }else if (valor < this.saldo){
-            console.log(`Você realizou um saque de ${valor}`);
-        }else if (valor > this.saldo){
-            console.log(`Não é possivel retirar um valor acima do saldo`);
-        }else{
-            console.log(`Falha ao realizar saque`);
-        }
-    }
+//     sacar(valor: number){
+//         if (valor < 0){
+//             console.log(`Falha ao realizar saque`);
+//         }else if (valor < this.saldo){
+//             console.log(`Você realizou um saque de ${valor}`);
+//         }else if (valor > this.saldo){
+//             console.log(`Não é possivel retirar um valor acima do saldo`);
+//         }else{
+//             console.log(`Falha ao realizar saque`);
+//         }
+//     }
 
-}
+// }
 
-let conta = new Conta("Breno", 100, 'corrente')
+// let conta = new Conta("Breno", 100, 'corrente')
 
-conta.depositar(100)
+// conta.depositar(100)
 
-conta.verSaldo()
+// conta.verSaldo()
 
-conta.sacar(-3)
+// conta.sacar(-3)
